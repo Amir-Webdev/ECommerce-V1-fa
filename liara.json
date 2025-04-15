@@ -1,0 +1,8 @@
+{
+  "app": "ecommerce-barin",
+  "port": 5000,
+  "build": {
+    "location": "iran"
+  },
+  "disks": []
+}

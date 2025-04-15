@@ -1,0 +1,35 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "backend for ecommerce-v1",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon index.js",
+    "start": "node index.js",
+    "debug": "ndb index.js",
+    "data:import": "cd seed && node seeder.js",
+    "data:destroy": "cd seed && node seeder.js -d"
+  },
+  "author": "amir mosavi",
+  "license": "MIT",
+  "dependencies": {
+    "@aws-sdk/client-s3": "^3.782.0",
+    "aws-sdk": "^2.1692.0",
+    "barin-ecommerce-v1": "file:..",
+    "bcryptjs": "^3.0.2",
+    "colors": "^1.4.0",
+    "cookie-parser": "^1.4.7",
+    "cors": "^2.8.5",
+    "express": "^4.21.2",
+    "jsonwebtoken": "^9.0.2",
+    "mongodb": "^6.15.0",
+    "mongoose": "^8.13.1",
+    "multer": "^1.4.5-lts.2",
+    "uuid": "^11.1.0"
+  },
+  "devDependencies": {
+    "dotenv": "^16.4.7",
+    "nodemon": "^3.1.9"
+  }
+}
